@@ -1,0 +1,153 @@
+html{
+    box-sizing: border-box;
+    font-family: 'karla';
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #F7F9F9;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+h2,h4,p{
+    margin: 0px;
+}
+
+#card{
+    box-shadow: 2px 3px 7px rgba(0,0,0, 0.35);
+    border-radius: 5px;
+    overflow: hidden;
+    border: 2px solid #000;
+}
+
+#topSection{
+    height: 40%;
+    padding: 25px;
+}
+
+#bottomSection{
+    height: 60%;
+    color: #fff;
+}
+
+#bottomLeft{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    background-color: #2ab2af;
+    padding: 20px;
+}
+
+#bottomRight{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    background-color: #2ebfbd;
+    padding: 20px;
+}
+
+#topSection h2{
+    color: #2ab2af;
+    margin-bottom: 15px;
+}
+
+#topSection h4{
+    color: #c0df34;
+    margin-bottom: 10px;
+}
+
+#topSection p{
+    color: #98a6bd;
+}
+
+#priceTag{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+#price{
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+#plan{
+    margin-left: 10px;
+    position: relative;
+    top: 5px;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+button{
+    background-color: #c0df34;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #A9C42D;
+    transform: scale(1.02);
+}
+
+#bottomLeft h4{
+    margin: 15px 0px;
+}
+
+#bottomLeft p{
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    opacity: 0.8;
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+
+#effect{
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15rem solid orange;
+    animation: blink 0.75s step-end infinite, typing 4.6s steps(40,end) infinite;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 350px;
+    }
+}
+
+@keyframes blink {
+    from{
+        border-color: transparent;
+    }
+    50%{
+        border-color: orange;
+    }
+}
+
+@media(min-width: 576px){
+    #card, #bottomSection{
+        width: 600px;
+        height:400px;
+    }
+
+    #bottomLeft, #bottomRight{
+        width: 50%;
+    }
+}
+
+
