@@ -155,6 +155,10 @@ ul{
         width: 800px;
         height:400px;
     }
+    
+    #card{
+        margin: 12% 8%;
+    }
 
     #bottomLeft, #bottomRight{
         width: 50%;
