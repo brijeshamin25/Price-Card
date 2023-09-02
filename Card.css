@@ -150,4 +150,14 @@ ul{
     }
 }
 
+@media(min-width: 992px){
+    #card, #bottomSection{
+        width: 800px;
+        height:400px;
+    }
+
+    #bottomLeft, #bottomRight{
+        width: 50%;
+    }
+}
 
